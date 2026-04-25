@@ -10,5 +10,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @Version: V1.0
  */
 public interface IWmsCargoOwnersService extends IService<WmsCargoOwners> {
-
+    public void add(WmsCargoOwners wmsCargoOwners);
 }
