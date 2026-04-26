@@ -74,7 +74,7 @@ public class WmsWarehousesController extends JeecgController<WmsWarehouses, IWms
 	 * @param req
 	 * @return
 	 */
-	//@AutoLog(value = "仓库表-分页列表查询")
+	@AutoLog(value = "仓库表-分页列表查询")
 	@Operation(summary="仓库表-分页列表查询")
 	@GetMapping(value = "/list")
 	public Result<IPage<WmsWarehouses>> queryPageList(WmsWarehouses wmsWarehouses,
@@ -153,7 +153,7 @@ public class WmsWarehousesController extends JeecgController<WmsWarehouses, IWms
 	 * @param id
 	 * @return
 	 */
-	//@AutoLog(value = "仓库表-通过id查询")
+	@AutoLog(value = "仓库表-通过id查询")
 	@Operation(summary="仓库表-通过id查询")
 	@GetMapping(value = "/queryById")
 	public Result<WmsWarehouses> queryById(@RequestParam(name="id",required=true) String id) {
