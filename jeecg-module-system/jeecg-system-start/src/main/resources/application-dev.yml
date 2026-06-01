@@ -151,7 +151,7 @@ spring:
           slow-sql-millis: 5000
       datasource:
         master:
-          url: jdbc:mysql://8.148.236.145:3306/xingchenwms?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://127.0.0.1:13306/xingchenwms?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
           username: root
           password: wsrySuccess6
           driver-class-name: com.mysql.cj.jdbc.Driver
@@ -165,8 +165,8 @@ spring:
   data:
     redis:
       database: 0
-      host: 8.148.236.145
-      port: 6379
+      host: 127.0.0.1
+      port: 16379
       password: wsrySuccess6
 #mybatis plus 设置
 mybatis-plus:
