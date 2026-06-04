@@ -71,4 +71,12 @@ public interface IWmsProductCategoriesService extends IService<WmsProductCategor
 	 */
 	List<SelectTreeModel> queryListByPid(String pid);
 
+	/**
+	 * 生成分类编码
+	 *
+	 * @param parentId 父节点ID
+	 * @return 生成的分类编码
+	 */
+	String generateCategoryCode(String parentId);
+
 }
